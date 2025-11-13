@@ -35,6 +35,16 @@ function AppContent() {
   const [showLogin, setShowLogin] = useState(false);
   const { isAuthenticated, isAdmin, logout } = useAuth();
 
+  // Manejar la ruta /login desde la URL
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path === '/login') {
+      setShowLogin(true);
+      // Limpiar la URL sin recargar la página
+      window.history.replaceState({}, '', '/');
+    }
+  }, []);
+
   // Proteger la vista de admin
   useEffect(() => {
     if (currentView === "admin" && !isAuthenticated) {

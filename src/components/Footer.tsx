@@ -14,10 +14,38 @@ export function Footer() {
               Distribuidores autorizados de las marcas Fester y Henkel.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 hover:text-blue-400 cursor-pointer transition-colors" />
-              <Instagram className="h-5 w-5 hover:text-pink-400 cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 hover:text-blue-500 cursor-pointer transition-colors" />
-              <Youtube className="h-5 w-5 hover:text-red-500 cursor-pointer transition-colors" />
+              <a 
+                href="https://www.facebook.com/profile.php?id=61578373134388" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visita nuestra página de Facebook"
+              >
+                <Facebook className="h-5 w-5 hover:text-blue-400 cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visita nuestro Instagram"
+              >
+                <Instagram className="h-5 w-5 hover:text-pink-400 cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visita nuestro LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 hover:text-blue-500 cursor-pointer transition-colors" />
+              </a>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Visita nuestro canal de YouTube"
+              >
+                <Youtube className="h-5 w-5 hover:text-red-500 cursor-pointer transition-colors" />
+              </a>
             </div>
           </div>
           
