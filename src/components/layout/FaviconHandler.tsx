@@ -1,0 +1,1 @@
+export { FaviconHandler } from '../FaviconHandler';
